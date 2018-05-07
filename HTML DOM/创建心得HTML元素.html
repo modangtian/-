@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>创建新的HTML元素</title>
+</head>
+<body>
+	<div id='div1'>
+		<p id='p1' style="color:red">这是一个新段落</p>
+		<p id='p2' style="color:yellow">这是一个段落</p>
+	</div>
+	<script>
+		var para=document.createElement('p');
+		var node = document.createTextNode('这是第三个');
+		para.appendChild(node);
+		var element = document.getElementById('div1');
+		element.appendChild(para);
+	</script>
+</body>
+</html>

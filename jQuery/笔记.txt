@@ -1,0 +1,14 @@
+jQuery安装：
+百度CDN：<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"> </script>
+又拍云 CDN:
+<script src="http://upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.2.min.js">
+</script>
+新浪 CDN:
+<script src="http://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js">
+</script>
+Google CDN:
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+Microsoft CDN:
+<script src="http://ajax.htmlnetcdn.com/ajax/jQuery/jquery-1.10.2.min.js">
+</script>

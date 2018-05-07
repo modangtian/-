@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div>
+		<p id='p1'>你哈皮</p>
+		<p id='p2'>你哈皮</p>
+		<p id='p3'>你哈皮</p>
+	</div>
+	<script>
+		var p1= document.getElementById("p1");
+		var p2= document.getElementById('p2');
+		var p3= document.getElementById('p3');
+		p1.innerHTML = "我是二狗子";
+		p1.style.color='red';
+		p2.style.fontSize = 'larger';
+		function ChangeText(){
+			p1.innerHTML = '二狗子，我爱你';
+			p1.style.color='blue';
+		}
+	</script>
+	<input type="button" onclick="ChangeText()" value="修改">
+</body>
+</html>

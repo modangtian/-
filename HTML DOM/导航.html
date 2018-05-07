@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>导航</title>
+</head>
+<body>
+	<p id="demo">hello world</p>
+	<p>你好</p>
+	<p>这个实例演示了 <b>length</b> 属性。</p>
+	<br>
+  		<br>
+	<div id="div1">
+		<p>DOM 是非常有用的!</p>
+  		<p>这个实例演示了节点的关系。</p>
+	</div>
+	<script>
+		var x=document.getElementsByTagName('p');
+		for(var i=0;i<x.length;i++){
+			document.write(x[i].innerHTML);
+			document.write('<br>')
+		}
+		document.write('第二个段落的内容为 '+x[1].innerHTML);
+		var demo=document.getElementById('demo');
+		document.write('<br>')
+		document.write(demo.firstChild.nodeValue);
+
+		var div1=document.getElementById('div1');
+		document.write('<br>')
+		document.write(div1.lastChild.nodeValue);
+	</script>
+</body>
+</html>

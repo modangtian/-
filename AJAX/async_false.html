@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script>
+		function loadXMLDoc(){
+			var xmlhttp;
+			if(window.XMLHttpRequest){
+				xmlhttp=new XMLHttpRequest();
+			}
+			else{
+				xmlhttp=new ActiveXObject('Microsoft.XMLHTTP');
+			}
+			xmlhttp.open('GET','ajax.txt',false);
+			xmlhttp.send();
+			document.getElementById('myDiv').innerHTML=xmlhttp.responseText;
+
+		}
+	</script>
+</head>
+<body>
+	<div id='myDiv'>使用ajax修改内容</div>
+	<button type="button" onclick="loadXMLDoc()">修改</button>
+</body>
+</html>

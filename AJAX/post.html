@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script>
+		function loadXMLDox(){
+			var xmlhttp;
+			if(window.XMLHttpRequest){
+				xmlhttp=new XMLHttpRequest();
+			}
+			else{
+				xmlhttp=new ActiveXObject('Microsoft.XMLHTTP');
+			}
+			xmlhttp.onreadystatechange=function(){
+				if(xmlhttp.readyState==4&&xmlhttp.staue==200){
+					document.getElementById('myDiv').innerHTTP=xmlhttp.responseText;
+				}
+			}
+			xmlhttp.open('POST','ajax.txt',true);
+			xmlhttp.setRequestHeader('Content-type','application/x-www-form-urlencode');//setRequestHeader(header,value\)
+			xmlhttp.send('fname=yang&lname=hao');
+
+		}
+	</script>
+</head>
+<body>
+	<button type="button" onclick="loadXMLDoc()">请求数据</button>
+	<div id="myDiv"></div>
+</body>
+</html>
